@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "Project29_backend": {
+      "main": "src/Project29_backend/main.mo",
+      "type": "motoko"
+    },
+    "Project29_frontend": {
+      "dependencies": [
+        "Project29_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/Project29_frontend/src/index.html"
+      },
+      "source": [
+        "src/Project29_frontend/assets",
+        "dist/Project29_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
